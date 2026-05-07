@@ -1,3 +1,5 @@
+/*CSS Reset*/
+
 *,
 *::before,
 *::after {
@@ -60,7 +62,7 @@ main section h2::before {
     color: #316A6B;
 }
 
-/*table epserienze*/
+/*table esperienze*/
 table {
     border-collapse: collapse;
 }
@@ -263,7 +265,6 @@ button:hover {
 #correlated-sites li::before {
     content: '🐈 '
 }
-
 
 /*footer*/
 #site-footer {
