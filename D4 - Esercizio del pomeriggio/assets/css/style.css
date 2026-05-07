@@ -81,7 +81,7 @@ caption {
 /*menu nav*/
 nav a {
     display: inline-block;
-    color: hsl(220, 60%, 30%);
+    color: #FFFFFF;
     font-weight: bold;
     line-height: 3;
 }
