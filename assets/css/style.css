@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body {
+font-family: 'Roboto', sans-serif;
+}
+
+.quotation {
+    width: 80%;
+    background-color: aquamarine;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.quotation p {
+    padding-left: 2px;
+}
+
+.image {
+    box-shadow: 4px 4px 8px 5px gray;
+    width: 50%;
+}
