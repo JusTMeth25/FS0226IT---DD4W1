@@ -1,3 +1,10 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*header*/
 #site-header {
     background-color: hsl(220, 40%, 20%);
     background-image: url(../img/pexels-davide-robetti-1119720888-29773799.jpg);
@@ -6,6 +13,9 @@
     color: #ffffff;
     text-align: center;
     line-height: 2.4;
+    padding: 60px 20px 40px;
+    border-bottom: 4px solid #316A6B;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 #site-header h1 {
@@ -14,13 +24,43 @@
     font-style: italic;
 }
 
+#site-header nav {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 0 4px;
+    border-radius: 4px;
+}
+
+/*body*/
 body {
+    margin: 0;
     font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
     line-height: 1.7;
     color: #344F86;
     background-color: #fafafa;
 }
 
+/*main e main section*/
+main {
+    max-width: 920px;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+main section {
+    padding: 32px;
+    margin-bottom: 24px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+main section h2::before {
+    content: '— ';
+    color: #316A6B;
+}
+
+/*table*/
 table {
     border-collapse: collapse;
 }
@@ -32,17 +72,16 @@ caption {
 
 }
 
-figcaption {
-    font-style: italic;
-}
 
 .tagline {
-    color: rgb(244, 74, 74);
+    color: hsl(220, 60%, 30%);
     font-style: italic;
 }
 
+/*menu nav*/
 nav a {
-    color: #899222;
+    display: inline-block;
+    color: hsl(220, 60%, 30%);
     font-weight: bold;
     line-height: 3;
 }
@@ -53,20 +92,40 @@ nav a:hover {
 }
 
 nav li {
+    display: inline-block;
     list-style-type: none;
+    padding: 20px;
 }
 
-h2,
-h3 {
-    font-size: 150%;
-    color: hsl(hue, saturation, lightness);
+nav li:hover {
+    background-color: rgba(255, 252, 252, 0.642);
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Titoli del main */
+h2 {
+    font-size: 1.8rem;
+    color: hsl(220, 60%, 30%);
     text-align: left;
+    line-height: 2.4;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: hsl(220, 30%, 25%);
+    text-align: left;
+    line-height: 2.2;
 }
 
 img {
-    width: 25%;
+    width: 200px;
+    height: 200px;
 }
 
+/*chi-sono*/
 #Chi-sono {
     background-color: #ffffff;
     text-align: justify;
@@ -76,6 +135,29 @@ img {
     font-size: 1.15rem;
     font-style: italic;
     color: #7B8393;
+}
+
+#Chi-sono p:first-of-type::first-letter {
+    font-size: 3rem;
+    font-weight: bold;
+    float: left;
+    margin-right: 6px;
+    color: hsl(220, 60%, 30%);
+}
+
+.avatar {
+    width: 110px;
+    height: 110px;
+    border: 4px solid hsl(220, 60%, 30%);
+    border-radius: 50%;
+    float: left;
+    margin: 0 24px 12px 0;
+}
+
+/*competenze*/
+
+#Competenze {
+    clear: both;
 }
 
 .skill-list li:nth-child(odd) {
@@ -90,6 +172,7 @@ img {
     font-weight: bold;
 }
 
+/*progetti*/
 .project:nth-of-type(odd) {
     background-color: #FAFAFA;
 }
@@ -98,9 +181,31 @@ img {
     background-color: #FBF8EF;
 }
 
+.project:first-of-type h3::after {
+    content: "NEW";
+    display: inline-block;
+    padding: 2px 8px;
+    margin-left: 12px;
+    background-color: red;
+    color: #FFFFFF;
+    border-radius: 3px;
+    font-size: 0.75rem;
+}
+
+.project:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/*input e form*/
 label {
     font-weight: bold;
     color: #395389;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #999999;
+    font-style: italic;
 }
 
 input,
@@ -128,7 +233,12 @@ textarea:focus {
     color: black;
 }
 
+/*button*/
 button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: white;
     background-color: #1F3D7A;
     font-weight: bold;
@@ -137,8 +247,21 @@ button {
 
 button:hover {
     color: rgb(80, 243, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
+/*correlated-sites*/
+
+#correlated-sites ul {
+    list-style-type: none;
+}
+
+#correlated-sites li::before {
+    content: '🐈 '
+}
+
+
+/*footer*/
 #site-footer {
     background-color: #395389;
     color: #ffffff;
