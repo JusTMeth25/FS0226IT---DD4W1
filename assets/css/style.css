@@ -1,7 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-html, body {
-font-family: 'Roboto', sans-serif;
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    font-size: 1.1rem;
 }
 
 .quotation {
@@ -15,7 +28,18 @@ font-family: 'Roboto', sans-serif;
     padding-left: 2px;
 }
 
-.image {
+.image img {
     box-shadow: 4px 4px 8px 5px gray;
-    width: 10%;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.list ul li::before {
+    content: 'Studente';
+    font-weight: bold;
+}
+
+.list ul li::after {
+    content: ' ✅';
+    overflow: auto;
 }
