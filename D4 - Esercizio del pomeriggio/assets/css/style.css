@@ -91,6 +91,10 @@ nav a:hover {
     background-color: rgba(red, green, blue, alpha);
 }
 
+nav ul {
+    padding-inline-start: 0;
+}
+
 nav li {
     display: inline-block;
     list-style-type: none;
